@@ -107,7 +107,7 @@ $isLoggedIn = isset($_SESSION['user']);
 <!-- COMMUNITY SECTION -->
 <section class="bg-light py-5 border-top">
   <div class="container text-center">
-    <h2 class="mb-3">Join the Tea Community</h2>
+    <h2 class="mb-3">Join the TeaScout Community</h2>
     <p class="mb-4">Share your favorite teas, exchange brewing tips, and connect with other tea enthusiasts.</p>
     <a href="register.php" class="btn btn-success btn-lg">Create an Account</a>
   </div>
@@ -115,7 +115,7 @@ $isLoggedIn = isset($_SESSION['user']);
 
 <!-- FOOTER -->
 <footer class="bg-dark text-white text-center py-3 mt-5">
-  <small>&copy; <?php echo date("Y"); ?> TeaScout. All rights reserved.</small>
+  <small>&copy; 2025 TeaScout. All rights reserved.</small>
 </footer>
 </body>
 </html>
