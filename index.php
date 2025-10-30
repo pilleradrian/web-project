@@ -22,8 +22,6 @@ $isLoggedIn = isset($_SESSION['user']);
     </button>
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="forum.php">Forum</a></li>
-        <li class="nav-item"><a class="nav-link" href="reviews.php">Reviews</a></li>
         <?php if ($isLoggedIn): ?>
           <li class="nav-item"><a class="nav-link" href="profile.php">My Profile</a></li>
           <li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
@@ -37,14 +35,26 @@ $isLoggedIn = isset($_SESSION['user']);
 </nav>
 
 <!-- HERO SECTION -->
-<section class="position-relative text-white text-center bg-dark bg-opacity-75 mb-5" 
-         style="background: url('assets/tea-bg.jpg') center/cover no-repeat; padding: 6rem 2rem;">
+<section class="text-white text-center bg-dark bg-opacity-75 mb-5 position-relative" 
+         style="background: url('assets/tea-bg.jpg') center/cover no-repeat; padding: 8rem 2rem;">
   <div class="container position-relative">
-    <h1 class="display-4 fw-bold">Discover. Review. Share.</h1>
-    <p class="lead mb-4">Find the perfect tea for your taste and explore what others recommend.</p>
-    <a href="reviews.php" class="btn btn-light btn-lg">Browse Teas</a>
+    <h1 class="display-4 fw-bold mb-3">Discover. Review. Share.</h1>
+    <p class="lead mb-5">Find the perfect tea for your taste and explore what others recommend.</p>
+    
+    <ul class="list-unstyled d-flex flex-column flex-sm-row justify-content-center gap-3">
+      <li class="button-item">
+        <a href="reviews.php" class="btn btn-outline-light btn-lg px-4 py-2 fw-semibold shadow-sm">
+          Browse Reviews
+        </a>
+      </li>
+      <li class="button-item">
+        <a href="forum.php" class="btn btn-outline-light btn-lg px-4 py-2 fw-semibold shadow-sm">
+          Browse the Forum
+        </a>
+      </li>
+    </ul>
   </div>
-</section>
+  </section>
 
 <!-- FEATURED REVIEWS -->
 <section class="container mb-5">
@@ -107,7 +117,5 @@ $isLoggedIn = isset($_SESSION['user']);
 <footer class="bg-dark text-white text-center py-3 mt-5">
   <small>&copy; <?php echo date("Y"); ?> TeaScout. All rights reserved.</small>
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
